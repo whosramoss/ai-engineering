@@ -1,0 +1,21 @@
+{
+  "name": "pollyglot",
+  "description": "pollyglot is a versatile language model designed to understand and generate text in multiple languages. It can be used for various applications such as translation, content creation, and language learning.",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.2.2",
+    "openai": "^4.76.0",
+    "tailwindcss": "^4.2.2",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.2"
+  }
+}
