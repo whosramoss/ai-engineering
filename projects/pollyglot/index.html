@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pollyglot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+  <body class="app-body">
+    <main class="app-main">
+      <section class="app-card">
+        <header class="mb-6 text-center">
+          <h1 class="text-3xl font-semibold tracking-tight">Pollyglot</h1>
+          <p class="mt-2 text-sm text-neutral-300">
+            Minimal translator with classic and chat modes.
+          </p>
+        </header>
+
+        <div class="tab-group">
+          <button
+            type="button"
+            id="tab-trigger-index"
+            class="tab-trigger tab-button"
+            data-tab="index"
+            aria-selected="true"
+          >
+            Direct
+          </button>
+          <button
+            type="button"
+            id="tab-trigger-chat"
+            class="tab-trigger tab-button"
+            data-tab="chat"
+            aria-selected="false"
+          >
+            Chat
+          </button>
+        </div>
+
+        <section
+          id="panel-index"
+          class="tab-panel space-y-4"
+          data-panel="index"
+          aria-hidden="false"
+        >
+          <h2 class="text-lg font-medium">Direct Translation</h2>
+          <textarea
+            id="index-input"
+            class="input-box h-28"
+            placeholder="Type a text to translate..."
+          ></textarea>
+          <p id="index-error" class="error-text"></p>
+          <fieldset
+            id="index-result"
+            class="space-y-2 text-sm text-neutral-100"
+          >
+            <legend class="mb-1 text-neutral-300">Select a language</legend>
+            <select
+              id="index-lang"
+              name="index-lang"
+              class="language-select"
+              aria-label="Target language for translation"
+            >
+              <option value="">Choose a language…</option>
+              <option value="Portuguese">Portuguese</option>
+              <option value="English">English</option>
+              <option value="French">French</option>
+            </select>
+          </fieldset>
+          <button
+            id="index-translate"
+            class="action-button action-button-primary"
+          >
+            Translate
+          </button>
+        </section>
+
+        <section
+          id="panel-chat"
+          class="tab-panel tab-panel--inactive space-y-4"
+          data-panel="chat"
+          aria-hidden="true"
+        >
+          <h2 class="text-lg font-medium">Chat</h2>
+          <div id="chat-feed" class="chat-feed">
+            <p class="chat-initial-message">
+              Select a language and send a message to begin.
+            </p>
+          </div>
+          <textarea
+            id="chat-input"
+            class="input-box h-24"
+            placeholder="Type your message..."
+          ></textarea>
+          <p id="chat-error" class="error-text"></p>
+          <div class="space-y-2 text-sm text-neutral-100">
+            <label for="chat-lang" class="mb-1 block text-neutral-300">Select a language</label>
+            <select
+              id="chat-lang"
+              name="chat-lang"
+              class="language-select"
+              aria-label="Target language for chat translation"
+            >
+              <option value="">Choose a language…</option>
+              <option value="Portuguese">Portuguese</option>
+              <option value="English">English</option>
+              <option value="French">French</option>
+            </select>
+          </div>
+          <button id="chat-send" class="action-button action-button-secondary">
+            Send
+          </button>
+        </section>
+      </section>
+    </main>
+    <script src="scripts/index.ts" type="module"></script>
+  </body>
+</html>
