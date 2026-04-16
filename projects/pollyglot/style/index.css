@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+.app-body {
+  @apply min-h-screen bg-linear-to-b from-neutral-950 via-neutral-900 to-neutral-950 text-white;
+}
+
+.app-main {
+  @apply mx-auto flex min-h-screen w-full max-w-3xl items-center justify-center px-4 py-10;
+}
+
+.app-card {
+  @apply w-full rounded-2xl border border-white/20 bg-black/40 p-6 shadow-2xl backdrop-blur;
+}
+
+.tab-group {
+  @apply mb-6 grid grid-cols-2 gap-2 rounded-xl border border-white/15 bg-white/5 p-1;
+}
+
+.tab-button {
+  @apply rounded-lg px-4 py-2 text-sm font-medium transition;
+}
+
+.input-box {
+  @apply w-full resize-none rounded-xl border border-white/20 bg-black/30 p-4 text-sm text-white placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-white/40;
+}
+
+.language-select {
+  @apply w-full cursor-pointer rounded-xl border border-white/20 bg-black/30 px-4 py-3 text-sm text-white focus:outline-none focus:ring-2 focus:ring-white/40;
+}
+
+.language-select option {
+  @apply bg-neutral-900 text-white;
+}
+
+.error-text {
+  @apply min-h-5 text-sm text-red-400;
+}
+
+.action-button {
+  @apply w-full rounded-xl border border-white/25 py-2 text-sm font-semibold transition;
+}
+
+.action-button-primary {
+  @apply bg-white/10 hover:bg-white/20;
+}
+
+.action-button-secondary {
+  @apply bg-white text-black hover:bg-neutral-200;
+}
+
+.chat-feed {
+  @apply max-h-72 space-y-2 overflow-y-auto rounded-xl border border-white/20 bg-black/30 p-3;
+}
+
+.chat-initial-message {
+  @apply rounded-lg border border-white/10 bg-white/10 p-3 text-sm text-neutral-100;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Google Sans", "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.tab-trigger[aria-selected="false"]:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Tab panels: explicit hide so visibility never depends on Tailwind `hidden` or UA [hidden] quirks */
+.tab-panel.tab-panel--inactive {
+  display: none !important;
+}
