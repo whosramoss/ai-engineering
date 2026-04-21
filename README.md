@@ -1,18 +1,33 @@
-# AI Engineering
+<h1>
+  <p align="center">
+    <img src="./icon.svg" alt="logo" width="128">
+     <br>Ai Engineering
+  </p>
+</h1>
 
-Comprehensive and structured catalog of artificial intelligence agents, projects and tools across multiple domains.
+<p align="center">
+ Comprehensive and structured catalog of artificial intelligence agents, projects and tools across multiple domains.
+  <br /> <br />
+    <a href="#projects">Projects</a>
+    ·
+    <a href="#agents">Agents</a>
+    ·
+    <a href="#products">Products</a>
+</p>
 
-## Ai Projects
+<br/><br/>
+
+## Projects
 
 1. [Pollyglot](./projects/pollyglot/README.md)
 
-## Ai Agents
+## Agents
 
 1. [Front-end](./agents/frontend/README.md)
 2. [Back-end](./agents/backend/README.md)
 3. [Flutter](./agents/flutter/README.md)
 
-## Ai Products
+## Products
 
 1. [Productivity & Writing](./tools/README.md#1-productivity--writing)
 2. [Design & Image](./tools/README.md#2-design--image)
