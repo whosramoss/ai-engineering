@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Detect objects in images directly in the browser using Transformers.js"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Transformers.js — Object Detection</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="header__badge">Transformers.js</div>
+        <h1 class="header__title">Object Detection</h1>
+        <p class="header__subtitle">
+          Run a vision model locally in your browser — no server required.
+        </p>
+      </header>
+
+      <main class="card">
+        <div class="toolbar">
+          <div class="status" aria-live="polite">
+            <span class="status__dot" aria-hidden="true"></span>
+            <span id="status">Initializing...</span>
+          </div>
+          <button id="detect-objects" class="btn" disabled>
+            Detect Objects
+          </button>
+        </div>
+
+        <figure id="image-container" class="image-frame">
+          <img
+            id="image"
+            src="road.jpeg"
+            alt="Sample street scene for object detection"
+          />
+        </figure>
+      </main>
+
+      <footer class="footer">
+        Powered by
+        <a
+          href="https://huggingface.co/docs/transformers.js"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Hugging Face Transformers.js</a
+        >
+      </footer>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
