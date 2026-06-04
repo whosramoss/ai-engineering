@@ -1,0 +1,14 @@
+{
+  "name": "transformers-object-detection",
+  "description": "Transformers — Object Detection: browser-based object detection demo using Transformers.js (Hugging Face), running ONNX models locally without a remote inference server.",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^3.1.2",
+    "vite": "latest"
+  }
+}
