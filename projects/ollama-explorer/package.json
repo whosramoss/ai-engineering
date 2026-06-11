@@ -1,0 +1,19 @@
+{
+  "name": "ollama-explorer",
+  "description": "Web interface to explore different scenarios with local models via Ollama",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev:server": "node index.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "ollama": "^0.5.11"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
