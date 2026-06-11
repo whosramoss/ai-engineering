@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ollama Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="topnav">
+    <a class="brand" href="https://ollama.com" target="_blank" rel="noopener noreferrer">
+      <img src="ollama.png" alt="Ollama" class="brand-logo" width="32" height="32" />
+      <span class="brand-name">Ollama</span>
+    </a>
+    <div class="topnav-actions">
+      <div class="model-select">
+        <label for="model">Model</label>
+        <select id="model">
+          <option value="mistral">mistral (default)</option>
+        </select>
+        <button type="button" id="refresh-models" class="btn btn-icon" title="Refresh models" aria-label="Refresh models">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><polyline points="21 3 21 9 15 9"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="app">
+    <header class="hero">
+      <h1>Explore different scenarios<br />with local models</h1>
+      <p class="subtitle">Chat, generate, stream, and embed — powered by Ollama running on your machine.</p>
+    </header>
+
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-scenario="chat" role="tab">Chat</button>
+      <button class="tab" data-scenario="generate" role="tab">Generate</button>
+      <button class="tab" data-scenario="stream" role="tab">Streaming</button>
+      <button class="tab" data-scenario="embed" role="tab">Embeddings</button>
+      <button class="tab" data-scenario="models" role="tab">Models</button>
+    </nav>
+
+    <main class="panel">
+      <section id="panel-chat" class="scenario-panel active">
+        <label for="chat-system">System prompt (optional)</label>
+        <textarea id="chat-system" rows="2" placeholder="e.g. You are a helpful and concise assistant."></textarea>
+
+        <label for="chat-input">Message</label>
+        <textarea id="chat-input" rows="4" placeholder="Ask the model a question..."></textarea>
+
+        <button type="button" id="btn-chat" class="btn btn-primary">Send chat</button>
+      </section>
+
+      <section id="panel-generate" class="scenario-panel">
+        <label for="generate-system">System prompt (optional)</label>
+        <textarea id="generate-system" rows="2" placeholder="e.g. Respond in English."></textarea>
+
+        <label for="generate-prompt">Prompt</label>
+        <textarea id="generate-prompt" rows="4" placeholder="e.g. Write a haiku about programming."></textarea>
+
+        <button type="button" id="btn-generate" class="btn btn-primary">Generate text</button>
+      </section>
+
+      <section id="panel-stream" class="scenario-panel">
+        <label for="stream-system">System prompt (optional)</label>
+        <textarea id="stream-system" rows="2" placeholder="e.g. Respond creatively."></textarea>
+
+        <label for="stream-input">Message</label>
+        <textarea id="stream-input" rows="4" placeholder="The response will appear token by token..."></textarea>
+
+        <button type="button" id="btn-stream" class="btn btn-primary">Start streaming</button>
+      </section>
+
+      <section id="panel-embed" class="scenario-panel">
+        <label for="embed-input">Text</label>
+        <textarea id="embed-input" rows="4" placeholder="Text to convert into a numeric vector (embedding)..."></textarea>
+
+        <button type="button" id="btn-embed" class="btn btn-primary">Generate embedding</button>
+      </section>
+
+      <section id="panel-models" class="scenario-panel">
+        <p class="hint">Lists locally installed models via <code>ollama list</code>.</p>
+        <button type="button" id="btn-models" class="btn btn-primary">List models</button>
+      </section>
+    </main>
+
+    <section class="output">
+      <div class="output-header">
+        <h2>Response</h2>
+        <span id="status" class="status"></span>
+      </div>
+      <pre id="response" class="response">Select a scenario and send a request.</pre>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <span>Built with <a href="https://ollama.com" target="_blank" rel="noopener noreferrer">Ollama</a></span>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
