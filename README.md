@@ -39,3 +39,7 @@
 8. [Science & Data](./tools/README.md#8-science--data)
 9. [Health & Wellness](./tools/README.md#9-health--wellness)
 10. [Entertainment & Creativity](./tools/README.md#10-entertainment--creativity)
+
+## News
+
+- [The IT department: Where AI goes to die](https://www.economist.com/by-invitation/2026/04/01/the-it-department-where-ai-goes-to-die)
