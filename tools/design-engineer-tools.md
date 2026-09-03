@@ -2,8 +2,6 @@
 
 A list of useful tools for web-focused design engineers.
 
-> Source: [designengineer.tools](https://designengineer.tools/)
-
 ## Inspiration
 
 - [60fps](https://60fps.design/)
@@ -44,14 +42,28 @@ A list of useful tools for web-focused design engineers.
 ## Components
 
 - [21st.dev](https://21st.dev/)
+- [Aceternity UI](https://ui.aceternity.com/)
+- [Ant Design](https://ant.design/)
+- [Ariakit](https://ariakit.org/)
+- [Base UI](https://base-ui.com/)
 - [Component Gallery](https://component.gallery/)
 - [Cursify](https://cursify.vercel.app/)
 - [Fancy Components](https://www.fancycomponents.dev/)
+- [Flowbite](https://flowbite.com/)
+- [Flowbite - React](https://www.flowbite-react.com/)
 - [Framer University Resources](https://framer.university/resources)
+- [Headless UI](https://headlessui.com/)
+- [Hover.dev](https://www.hover.dev/)
+- [Kibo UI](https://www.kibo-ui.com/)
+- [Magic UI](https://magicui.design/)
+- [Material UI](https://mui.com/material-ui/)
 - [Motion Primitives](https://motion-primitives.com/)
 - [NumberFlow](https://number-flow.barvian.me/)
+- [Origin UI](https://originui.com/)
 - [React Bits](https://www.reactbits.dev/)
 - [shadcn/ui](https://ui.shadcn.com/)
+- [solid-ui](https://www.solid-ui.com/docs/components/bar-list)
+- [ZnUI](https://ui.zation.ru/)
 
 ## Web Utility
 
@@ -189,3 +201,26 @@ A list of useful tools for web-focused design engineers.
 
 - [MakeEmoji](https://makeemoji.com/)
 
+## CSS Frameworks
+
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## Animation Libraries
+
+- [Anime.js](https://animejs.com/)
+- [GSAP](https://gsap.com/)
+- [Motion](https://motion.dev/)
+- [TroisJS](https://troisjs.github.io/)
+
+## React Hooks / Utilities
+
+- [React Haiku](https://www.reacthaiku.dev/)
+
+## Snippets & Design References
+
+- [QuickSnip](https://quicksnip.dev/)
+- [UI Playbook](https://uiplaybook.dev/)
+
+## Conversion Tools
+
+- [Tailwind To CSS](https://tailwind-to-css.vercel.app/)
