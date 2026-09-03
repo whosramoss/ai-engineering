@@ -12,7 +12,7 @@
     ·
     <a href="#agents">Agents</a>
     ·
-    <a href="#products">Products</a>
+    <a href="#tools">Tools</a>
 </p>
 
 <br/><br/>
@@ -27,7 +27,7 @@
 2. [Back-end](./agents/backend/README.md)
 3. [Flutter](./agents/flutter/README.md)
 
-## Products
+## Tools
 
 1. [Productivity & Writing](./tools/README.md#1-productivity--writing)
 2. [Design & Image](./tools/README.md#2-design--image)
@@ -39,6 +39,7 @@
 8. [Science & Data](./tools/README.md#8-science--data)
 9. [Health & Wellness](./tools/README.md#9-health--wellness)
 10. [Entertainment & Creativity](./tools/README.md#10-entertainment--creativity)
+11. [Design Engineers](./tools/design-engineer-tools.md)
 
 ## News
 
