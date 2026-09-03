@@ -29,6 +29,8 @@
 
 ## Tools
 
+### AI Tools by Category
+
 1. [Productivity & Writing](./tools/README.md#1-productivity--writing)
 2. [Design & Image](./tools/README.md#2-design--image)
 3. [Video & Audio](./tools/README.md#3-video--audio)
@@ -39,7 +41,12 @@
 8. [Science & Data](./tools/README.md#8-science--data)
 9. [Health & Wellness](./tools/README.md#9-health--wellness)
 10. [Entertainment & Creativity](./tools/README.md#10-entertainment--creativity)
-11. [Design Engineers](./tools/design-engineer-tools.md)
+
+### Design & Frontend Collections
+
+1. [Design Engineers](./tools/design-engineer-tools.md)
+2. [Design System](./tools/design-system.md)
+
 
 ## News
 
