@@ -124,6 +124,7 @@
 | Fliki          | [fliki.ai](https://fliki.ai)                               | Text-to-video with realistic narrators.                 |
 | Speechelo      | [speechelo.com](https://speechelo.com)                     | Human-like voice generator.                             |
 | Pictory        | [pictory.ai](https://pictory.ai)                           | AI-powered short and educational video creation.        |
+| videos.social  | [videos.social](https://videos.social/?utm_source=whosramoss-ai-engineering&utm_medium=directory&utm_campaign=listing-wave-d) | Blog/PDF to editable faceless video. Start free — 1 render. |
 | Synthesys      | [synthesys.io](https://synthesys.io)                       | AI voices and video generation for businesses.          |
 | DeepBrain      | [deepbrain.io](https://www.deepbrain.io)                   | Training and marketing video generation.                |
 | Clipchamp AI   | [clipchamp.com/ai](https://clipchamp.com/ai)               | Automated editing tools for creators.                   |
